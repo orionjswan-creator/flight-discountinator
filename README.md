@@ -66,7 +66,25 @@ Useful flags:
 - JSON file (default: `deals_ranked.json`)
 - CSV file (default: `deals_ranked.csv`)
 
-## API (Local)
+## API (Local, Recommended)
+
+Run local in foreground (best for now):
+
+```powershell
+.\run_local.ps1 -Port 8000 -Reload
+```
+
+From anywhere (full path):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "C:\Users\orion\OneDrive\Desktop\Flight Discountinator\run_local.ps1" -Port 8000 -Reload
+```
+
+Stop local server:
+
+```powershell
+.\stop_local.ps1 -Port 8000
+```
 
 Run a local API server:
 
@@ -74,7 +92,7 @@ Run a local API server:
 uvicorn api:app --host 0.0.0.0 --port 8000
 ```
 
-Or one-command local deploy (installs deps, restarts port, verifies health):
+Background-style local deploy (installs deps, restarts port, verifies health):
 
 ```powershell
 .\deploy_local.ps1 -Port 8000
