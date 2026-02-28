@@ -117,6 +117,7 @@ curl "http://127.0.0.1:8000/deals?origin=CMH&top_destinations=10"
 ## Deploy (Render)
 
 - `render.yaml` is included for one-click Docker deploy.
+- This repo pins Render to `plan: free` in `render.yaml` to avoid paid instance defaults.
 - Set `AMADEUS_CLIENT_ID` and `AMADEUS_CLIENT_SECRET` in Render service env vars.
 - Optional: set `AMADEUS_BASE_URL` to production API base URL.
 

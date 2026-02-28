@@ -2,6 +2,7 @@ services:
   - type: web
     name: flight-discountinator
     runtime: docker
+    plan: free
     autoDeploy: true
     envVars:
       - key: AMADEUS_CLIENT_ID
