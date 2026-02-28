@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: flight-discountinator
+    runtime: docker
+    autoDeploy: true
+    envVars:
+      - key: AMADEUS_CLIENT_ID
+        sync: false
+      - key: AMADEUS_CLIENT_SECRET
+        sync: false
+      - key: AMADEUS_BASE_URL
+        value: https://test.api.amadeus.com

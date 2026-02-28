@@ -1,0 +1,7 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+deals_ranked.json
+deals_ranked.csv
+*.log
